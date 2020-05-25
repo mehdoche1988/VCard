@@ -1,0 +1,92 @@
+.container{
+
+
+    background-image: url(../img/fond.jpeg);
+    background-repeat:no-repeat;
+    background-position: bottom right;
+    background-size: cover;
+    color: white;
+
+    .grid-container{
+
+            display: grid;
+            grid-template-areas: 
+            'pics title title title '
+            'pics title title title  '
+            'AboutMe AboutMe AboutMe AboutMe  '
+            'icon-bar  icon-bar  icon-bar  icon-bar ';
+
+
+        .pics{
+    
+            grid-area: pics;
+            text-align: center;
+
+                img{
+
+                    border-radius: 100%;
+                    max-width: 75%;
+                    margin-top: 10%;
+                }
+            
+
+        }
+
+        .title{
+    
+            grid-area: title;
+
+                h1{
+
+
+                }
+                h2{
+
+
+                }
+
+        }
+
+        .AboutMe{
+            grid-area: AboutMe;
+            margin: 5%;
+            text-align: justify;
+
+        }
+
+        .icon-bar{
+
+            transform: translateY(-50%);
+                margin-top: 4%;
+            grid-area: icon-bar;
+            text-align: center;
+
+                    a{
+
+                        display: inline;
+                        text-align: center;
+                        padding: 5px;
+                        margin: 3px;
+                        transition: all 0.3s ease;
+                        color: white;
+                        font-size: 40px;
+                            &:hover{
+                                background-color: rgb(181, 240, 18);
+                            }
+                    }
+                    .twitter {
+                        background: #55ACEE;
+                        color: white;
+                            }
+                    .linkedin {
+                        background: #007bb5;
+                        color: white;
+                            }
+                    .github{
+
+                        background: #171515;
+                        color: white;
+                            }
+        }
+    }
+}
